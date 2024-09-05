@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import supervision as sv
 
 model = YOLO('yolov8n.pt')
-in_filename = 'Traffic.mp4'
+in_filename = 'input_videoFile.mp4'
 
 video_info = sv.VideoInfo.from_video_path(in_filename)
 frames_generator = sv.get_video_frames_generator(in_filename)
